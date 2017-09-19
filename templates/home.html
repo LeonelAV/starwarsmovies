@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-" <div class="bs-example">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/bb-9e_029443ae.jpeg?region=0%2C0%2C768%2C432&width=320" alt="First Slide">
+                </div>
+                <div class="item">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/at-m6-walker_5536096c.jpeg?region=0%2C0%2C768%2C432&width=320" alt="Second Slide">
+                </div>
+                <div class="item">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/crait_8878cb62.jpeg?region=0%2C0%2C768%2C432&width=320" alt="Third Slide">
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
+    </div>
+    <nav data-ng-init="init()">
+        <div id="left">
+            <ul class="nav">
+                <li class="active-color"><a type="button" ng-click="getMovies()">Select a Movie</a></li>
+                <li><a href="">Movie Details</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container" id="right">
+        <div class="row scroll-row">
+            <div class="col-xs-4 col-md-2 ships-box" ng-repeat="movie in movies">
+                <a type="button" class="thumbnail" ng-click="getDetailsById(movie)"><img src="{{movie.image}}" id="main-img" alt="..."></a>
+                <h4 id="caption">{{movie.title}}</h4>
+            </div>
+        </div>
+    </section>

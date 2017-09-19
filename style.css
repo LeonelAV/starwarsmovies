@@ -1,0 +1,166 @@
+
+.ships {
+  color: blue;
+  border:1px solid red;
+}
+
+
+
+.active-color {
+  background-color: #EEEEEE;
+}
+
+
+.ships-box {
+  padding: 10px;
+}
+
+#caption {
+  text-align: center;
+}
+
+#left {
+  width: 17%;
+  height: 100%;
+  position: fixed;
+}
+
+#right {
+  width: 85%;
+  height: 90%;
+  position: absolute;
+  right: 0;
+  margin-top: 1px;
+  margin-right: 20px;
+}
+
+.details {
+  margin-top: 50px;
+}
+
+#main-img {
+  cursor: pointer;
+}
+
+#left > ul {
+  margin-top: 100px;
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  list-style-type: none;
+}
+
+#left > ul > li {
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+.scroll-row {
+ /* overflow-y: scroll;*/
+  height: 100%;
+}
+
+.switch-buttons {
+  display: inline;
+}
+
+#set-buttons {
+  display: inline;
+  margin-left: 5px;
+}
+
+#passengers {
+    display: inline;
+}
+
+#number-passengers {
+    width: 15%;
+}
+
+#date-img {
+    width: 5%;
+}
+
+.reservation {
+    display: inline;
+}
+
+.main-buttons {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 55%;
+    margin-right: 21%;
+}
+
+.main-buttons button:nth-child(1) {
+    display: block;
+    margin-bottom: 25px;
+}
+
+#date {
+    width: 50%;
+}
+
+/****details******/
+
+.description {
+  margin-top: 5%; 
+  padding-left: 2%;
+  display: inline-block;
+  height: 200px;
+  margin-right: 5px;
+}
+
+.main-table {
+  margin-top: 40px;
+
+}
+
+#select {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  margin-right: 2%;
+}
+
+#back {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+}
+
+#map{
+  margin-top: 16px;
+}
+
+
+  @media (min-width:992px){
+    .enablebtn {
+     margin-left: 16.7% !important;
+   }
+}
+
+@media (max-width: 992px) {
+#right {
+height: 100%;
+}
+}
+
+.thumbnail>img {
+  max-width: 90% !important;
+}
+
+
+/*carousel*/
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+  margin: 20px;
+}
+

@@ -8,7 +8,7 @@
 
 ## **Installation**: 
 
->-Get the code: git clone https://github.com/LeonelAV/starwars.git
+>-Get the code: git clone https://github.com/LeonelAV/starwarsmovies.git
 
 >-To install dependencies you can just do: 
 ```
